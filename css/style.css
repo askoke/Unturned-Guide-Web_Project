@@ -9,7 +9,7 @@
 /* main */
 
 html, body {
-    font-family: 'Segoe UI', 'Tahoma', 'Verdana', sans-sheriff;
+    font-family: Arial;
     line-height: 1.7em;
 }
 a {
@@ -29,7 +29,7 @@ h1, h2, h3 {
     overflow: auto;
 }
 .text-primary {
-    color: #f7c08a;
+    color: #Ffdd00;
 }
 .btn {
     display: inline-block;
@@ -67,12 +67,13 @@ h1, h2, h3 {
 /* navbar */
 
 #navbar {
-    background: #333;
+    background: #154c79;
     color: #fff;
     overflow: auto;
 }
 #navbar a {
     color: #fff;
+    font-weight: bold;
 }
 #navbar ul {
     float: right;
@@ -86,10 +87,14 @@ h1, h2, h3 {
     padding: 20px;
     text-align: center;
 }
-#navbar ul li a:hover,
+#navbar ul li a:hover {
+    background: #195c92;
+    color: #Ffdd00;
+    text-decoration: underline;
+}
 #navbar ul li a.current {
-    background: #444;
-    color: #f7c08a;
+    background: #195c92;
+    color: #fff;
 }
 #navbar h1 {
     padding-top: 20px;
@@ -154,10 +159,11 @@ h1, h2, h3 {
 /* footer */
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background: #444;
+    text-align: left;
+    padding: 30px;
+    background: #195c92;
     color: #fff;
+    font-weight: bold;
 }
 
 /* clear */
