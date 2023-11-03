@@ -13,7 +13,6 @@ html, body {
     line-height: 1.7em;
 }
 a {
-    color: #333;
     text-decoration: none;
 }
 h1, h2, h3 {
@@ -31,38 +30,6 @@ h1, h2, h3 {
 .text-primary {
     color: #Ffdd00;
 }
-.btn {
-    display: inline-block;
-    font-size: 18px;
-    background: #333;
-    color: #fff;
-    padding: 13px 20px;
-    border: none;
-    cursor: pointer;
-}
-.btn:hover {
-    background: #f7c08a;
-    color: #333;
-}
-.btn-light {
-    background: #f4f4f4;
-    color: #333;
-}
-.bg-dark {
-    background: #333;
-    color: #fff;
-}
-.bg-light {
-    background: #f4f4f4;
-    color: #333;
-}
-.bg-primary {
-    background: #f7c08a;
-    color: #333;
-}
-.py-30 {
-    padding: 30px 0;
-}
 
 /* navbar */
 
@@ -70,6 +37,10 @@ h1, h2, h3 {
     background: #154c79;
     color: #fff;
     overflow: auto;
+}
+#navbar h1 {
+    padding-top: 20px;
+    float: left;
 }
 #navbar a {
     color: #fff;
@@ -84,28 +55,34 @@ h1, h2, h3 {
 }
 #navbar ul li a {
     display: block;
-    padding: 20px;
+    padding: 4px;
     text-align: center;
 }
 #navbar ul li a:hover {
     background: #195c92;
     color: #Ffdd00;
-    text-decoration: underline;
 }
 #navbar ul li a.current {
     background: #195c92;
     color: #fff;
+    text-decoration: underline;
 }
-#navbar h1 {
-    padding-top: 20px;
-    float: left;
+#navbar ul li a p {
+    padding: 16px;
+}
+#navbar ul li a p:hover {
+    /* katsetus / beta - transform: rotate(5deg); */
+    transform: translate(-2px, -2px);
+    text-shadow: 5px 5px 3px #0000009d;
+    transition-duration: 0.1s;
+    font-style: italic;
 }
 
 /* showcase */
 
 #showcase {
-    background: url('../img/showcase.jpg') no-repeat center center/cover;
-    height: 600px;
+    background: url(../img/hawaii_bg_main_bg.png) no-repeat center center/cover;
+    height: 1200px;
 }
 #showcase .showcase-content {
     color: #fff;
@@ -115,81 +92,181 @@ h1, h2, h3 {
 #showcase .showcase-content h1 {
     font-size: 60px;
     line-height: 1.2em;
+    text-shadow: 5px 5px 3px #0000009d;
 }
-#showcase .showcase-content p {
-    padding-bottom: 20px;
+#showcase .intro-box {
+    outline-style: solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    background-color: #33333391;
+    height: 200px;
+    margin-bottom: 60px;
+    box-shadow: 5px 5px 8px #0000009d;
+}
+#showcase .intro-box p {
+    text-align: justify;
+    font-size: 30px;
+    padding: 20px;
     line-height: 1.7em;
 }
 
-/* info */
+/* katsetus / beta
 
-#info {
-    height: 400px;
-}
-#info .info-content {
-    float: right;
-    width: 50%;
-    height: 100%;
-    text-align: center;
-    padding: 50px 30px;
-    overflow: hidden;
-}
-#info .info-content p {
-    padding-bottom: 30px;
-}
-#info .info-img {
-    float: left;
-    width: 50%;
-    background: url("../img/photo-1.jpg") no-repeat;
-    min-height: 100%;
+#showcase .grad {
+    background-image: linear-gradient(rgba(255,0,0,0), #444);
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: -217px;
+} */
+
+/* showcase gallery */
+
+#showcase .gallery {
+    text-align: justify;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    font-weight: bold;
+    text-shadow: 5px 5px 3px #0000009d;
 }
 
-/* features */
-
-#features .box {
-    float: left;
-    width: 33.3%;
-    padding: 50px;
-    text-align: center;
+#showcase .gallery hr {
+    color: #fff;
+    width: 25%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 5px 5px 8px #0000009d;
 }
-#features .box i {
+
+/* showcase gallary pictures */
+
+#showcase .next-to-each-other {
+    display: flex;
+    justify-content: left;
     margin-bottom: 10px;
+}
+#showcase .showcase-content .next-to-each-other a {
+    border-radius: 10px;
+    height: 80px;
+    width: 200px;
+    margin-left: 20px;
+    background: #33333391;
+    outline-style: solid;
+    outline-offset: -3px;
+    color: #fff;
+    box-shadow: 5px 5px 8px #0000009d;
+}
+#showcase .showcase-content .next-to-each-other a p {
+    text-align: center;
+    font-weight: bold;
+    padding: 25px 0 0;
+    height: 100px;
+    font-size: 30px;
+}
+#showcase .showcase-content .next-to-each-other a p:hover {
+    font-style: italic;
+    color: #Ffdd00;
+    /* katsetus / beta - transform: rotate(5deg); */
+    transform: translate(-2px, -2px);
+    text-shadow: 5px 5px 3px #0000009d;
+    transition-duration: 0.1s;
+}
+#showcase .showcase-img-one {
+    background-color: #fff;
+    height: 250px;
+    margin-right: 20px;
+    width: 250px;
+    border-radius: 10px;
+    background: url(../img/250x250-Placeholder.png) no-repeat;
+    box-shadow: 5px 5px 8px #0000009d;
+}
+#showcase .showcase-img-two {
+    background-color: #fff;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 250px; 
+    width: 250px;
+    border-radius: 10px;
+    background: url(../img/250x250-Placeholder.png) no-repeat;
+    box-shadow: 5px 5px 8px #0000009d;
+}
+#showcase .showcase-img-three {
+    background-color: #fff;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 250px; 
+    width: 250px;
+    border-radius: 10px;
+    background: url(../img/250x250-Placeholder.png) no-repeat;
+    box-shadow: 5px 5px 8px #0000009d;
 }
 
 /* footer */
 
-footer {
-    text-align: left;
+#footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #195c92;
+}
+#footer .grad {
+    background-image: linear-gradient(rgba(255,0,0,0), #195c92);
+    height: 400px;
+    width: 100%;
+    bottom: 87.19px;
+}
+#footer p {
     padding: 30px;
-    background: #195c92;
     color: #fff;
     font-weight: bold;
+    text-align: left;
 }
-
 /* clear */
 
 .clear {
     clear: both;
 }
 
-/* about */
+/* map */
 
-#about-info .info-left {
+#map-info {
+    background-color: #444;
+    height: 1000px;
+}
+#map-info .info-content {
+    padding-top: 30px;
+}  
+#map-info .info-box {
+    height: 900px;
+    background-color: #195c92;
+    width: 100%;
+} 
+#map-info .info-preview {
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    background: url(../img/russia\ 500.png) no-repeat;
     float: left;
+} 
+#map-info .info-russia {
+    outline-style: solid;
+    outline-color: #Ffdd00;
+    padding-top: 10px;
     width: 50%;
-    min-height: 100%;
-}
-#about-info .info-right {
+    height: 800px;
+    background-color: #fdfdfd;
     float: right;
-    width: 50%;
-    min-height: 100%;
-}
-#about-info .info-right img {
-    display: block;
-    margin: auto;
-    width: 70%;
-    border-radius: 50%;
-}
+    text-align: center;
+} 
+#map-info .info-russia-tips {
+    width: 287px;
+    height: 220px;
+    background: url(../img/car2.png) no-repeat;
+    float: left;
+} 
 
 /* testimonials */
 
