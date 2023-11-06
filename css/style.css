@@ -89,7 +89,6 @@ h1, h2, h3 {
     text-shadow: 5px 5px 3px #0000009d;
 }
 
-
 /* showcase */
 
 #showcase {
@@ -251,6 +250,7 @@ h1, h2, h3 {
 #map-info {
     background-color: #444;
     height: 1000px;
+
 }
 #map-info .info-content {
     padding-top: 30px;
@@ -278,10 +278,16 @@ h1, h2, h3 {
     text-align: center;
 } 
 #map-info .info-russia-tips {
-    width: 287px;
+    width: 250px;
     height: 220px;
-    background: url(../img/car2.png) no-repeat;
+    background: url(../img/car_new.png) no-repeat;
     float: left;
+} 
+#map-info .info-russia-tips-triks {
+    width: 250px;
+    height: 170px;
+    background: url(../img/plane1.png) no-repeat;
+    float: right
 } 
 
 /* sidebar */
