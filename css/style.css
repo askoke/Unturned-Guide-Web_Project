@@ -397,3 +397,103 @@ h1, h2, h3 {
 }
 
 /* task info */
+
+#task {
+    float: right;
+    width: 75%;
+    height: 100%;
+}
+#task .necessary {
+    padding: 20px;
+    margin: 20px;
+    margin-right: 45px;
+    height: 700px;
+    width: 30%;
+    color: #fff;
+    float: right;
+    outline-style: solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    background-color: #33333391;
+    box-shadow: 5px 5px 8px #0000009d;
+    overflow: auto;
+}
+#task .necessary p {
+    height: 95%;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 170%;
+}
+#task .necessary h1 {
+    height: 5%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #Ffdd00;
+}
+#task .overview {
+    color: #fff;
+    padding: 20px;
+    height: 230px;
+    width: 94%;
+    outline-style: solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    background-color: #33333391;
+    margin: 20px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 8px #0000009d;
+    overflow: auto;
+}
+#task .overview p {
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+}
+#task .img {
+    float: left;
+    width: 60%;
+    height: 700px;
+    margin: 20px;
+}
+#task .img img {
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    margin: 20px;
+}
+#task .img h1 {
+    height: 5%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: #Ffdd00;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#task .img hr {
+    color: #fff;
+    background-color: #fff;
+    width: 200px;
+    height: 4px;
+    margin-bottom: 30px;
+}
+#task .name {
+    width: 94%;
+    height: 10%;
+    margin: 20px;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+}
+#task .name p {
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: justify;
+    line-height: 40px;
+    text-shadow: 5px 5px 8px #0000009d;
+}
