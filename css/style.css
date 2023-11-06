@@ -76,10 +76,10 @@ h1, h2, h3 {
     transition: 0.1s ease;
 }
 #navbar ul li a p:hover {
-    /* katsetus / beta - transform: rotate(5deg); */
     transform: translate(-2px, -2px);
     text-shadow: 5px 5px 3px #0000009d;
     font-style: italic;
+    /* katsetus / beta - transform: rotate(5deg); */
 }
 #navbar a:hover {
     color: #Ffdd00;
@@ -95,7 +95,7 @@ h1, h2, h3 {
 #showcase {
     background: url(../img/hawaii_bg_main_bg.png) no-repeat center center/cover;
     height: 1200px;
-    box-shadow: 0 0 8px #0000009d inset;
+    box-shadow: 0 0 20px #0000009d inset;
 }
 #showcase .showcase-content {
     color: #fff;
@@ -112,15 +112,17 @@ h1, h2, h3 {
     outline-offset: -3px;
     border-radius: 10px;
     background-color: #33333391;
-    height: 200px;
+    height: 100%;
     margin-bottom: 60px;
     box-shadow: 5px 5px 8px #0000009d;
+    overflow: hidden;
 }
 #showcase .intro-box p {
     text-align: justify;
     font-size: 30px;
     padding: 20px;
     line-height: 1.7em;
+    font-weight: bold;
 }
 
 /* katsetus / beta
@@ -133,7 +135,7 @@ h1, h2, h3 {
     bottom: -217px;
 } */
 
-/* showcase gallery */
+    /* showcase gallery */
 
 #showcase .gallery {
     text-align: justify;
@@ -155,7 +157,7 @@ h1, h2, h3 {
     box-shadow: 5px 5px 8px #0000009d;
 }
 
-/* showcase gallary pictures */
+    /* showcase gallary pictures */
 
 #showcase .next-to-each-other {
     display: flex;
@@ -184,9 +186,9 @@ h1, h2, h3 {
 #showcase .showcase-content .next-to-each-other a p:hover {
     font-style: italic;
     color: #Ffdd00;
-    /* katsetus / beta - transform: rotate(5deg); */
     transform: translate(-2px, -2px);
     text-shadow: 5px 5px 3px #0000009d;
+    /* katsetus / beta - transform: rotate(5deg); */
 }
 #showcase .showcase-img-one {
     background-color: #fff;
@@ -196,6 +198,7 @@ h1, h2, h3 {
     border-radius: 10px;
     background: url(../img/250x250-Placeholder.png) no-repeat;
     box-shadow: 5px 5px 8px #0000009d;
+    min-width: 250px;
 }
 #showcase .showcase-img-two {
     background-color: #fff;
@@ -206,6 +209,7 @@ h1, h2, h3 {
     border-radius: 10px;
     background: url(../img/250x250-Placeholder.png) no-repeat;
     box-shadow: 5px 5px 8px #0000009d;
+    min-width: 250px;
 }
 #showcase .showcase-img-three {
     background-color: #fff;
@@ -216,6 +220,7 @@ h1, h2, h3 {
     border-radius: 10px;
     background: url(../img/250x250-Placeholder.png) no-repeat;
     box-shadow: 5px 5px 8px #0000009d;
+    min-width: 250px;
 }
 
 /* footer */
@@ -225,23 +230,21 @@ h1, h2, h3 {
     width: 100%;
     background-color: #195c92;
 }
-#footer .grad {
-    background-image: linear-gradient(rgba(255,0,0,0), #195c92);
-    height: 400px;
-    width: 100%;
-    bottom: 87.19px;
-}
 #footer p {
     padding: 30px;
     color: #fff;
     font-weight: bold;
     text-align: left;
 }
-/* clear */
 
-.clear {
-    clear: both;
-}
+/* katsetus / beta
+
+#footer .grad {
+    background-image: linear-gradient(rgba(255,0,0,0), #195c92);
+    height: 400px;
+    width: 100%;
+    bottom: 87.19px;
+} */
 
 /* map */
 
@@ -261,7 +264,7 @@ h1, h2, h3 {
     width: 500px;
     height: 500px;
     padding: 10px;
-    background: url(../img/russia\ 500.png) no-repeat;
+    background: url(../img/Russia\ 500.png) no-repeat;
     float: left;
 } 
 #map-info .info-russia {
@@ -284,16 +287,17 @@ h1, h2, h3 {
 /* sidebar */
 
 #sidebar {
+    float: left;
     height: 100%;
     width: 25%;
 }
 #sidebar .sidebar-box {
     height: 100%;
     background-color: #444;
-    box-shadow: 0 0 8px #0000009d inset;
+    box-shadow: 0 0 20px #0000009d inset;
 }
 
-/* sidebar buttons */
+    /* sidebar buttons */
 
 #sidebar .sidebar-nav {
     margin-left: 20px;
@@ -339,3 +343,57 @@ h1, h2, h3 {
 #sidebar ul li a p.current {
     color: #fff;
 }
+
+/* tasks overview */
+
+#tasks-panel {
+    float: right;
+    width: 75%;
+    height: 100%;
+}
+#tasks-panel .intro-info {
+    color: #fff;
+    padding: 20px;
+    height: 100px;
+    width: 94%;
+    margin: 20px;
+}
+#tasks-panel .intro-info p {
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: justify;
+    line-height: 40px;
+    text-shadow: 5px 5px 8px #0000009d;
+}
+#tasks-panel .overview-box {
+    color: #fff;
+    padding: 20px;
+    height: 300px;
+    width: 94%;
+    outline-style: solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    background-color: #33333391;
+    margin: 20px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 8px #0000009d;
+    overflow: auto;
+}
+#tasks-panel .overview-text {
+    height: 100%;
+    width: 74%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    float: right;
+}
+#tasks-panel .overview-img {
+    height: 250px;
+    width: 250px;
+    float: left;
+    border-radius: 10px;
+}
+
+/* task info */
