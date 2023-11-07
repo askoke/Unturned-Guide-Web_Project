@@ -1,0 +1,628 @@
+/* reset browser css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main */
+
+html, body {
+    font-family: Arial;
+    line-height: 1.7em;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+/* content basic style */
+
+.container {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0 20px;
+    overflow: auto;
+}
+.text-primary {
+    color: #Ffdd00;
+}
+
+/* navbar */
+
+#navbar {
+    background: #154c79;
+    color: #fff;
+    overflow: auto;
+}
+#navbar h1 {
+    padding-top: 20px;
+    float: left;
+    transition: 0.5s ease;
+}
+#navbar a {
+    color: #fff;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+#navbar ul {
+    float: right;
+    list-style: none;
+}
+#navbar ul li {
+    float: left;
+}
+#navbar ul li a {
+    display: block;
+    padding: 4px;
+    text-align: center;
+}
+#navbar ul li a:hover {
+    background: #195c92;
+    color: #Ffdd00;
+    box-shadow: 0 0 20px #0000009d;
+}
+#navbar ul li a.current {
+    background: #195c92;
+    color: #fff;
+    text-decoration: underline;
+    box-shadow: 0 0 20px #0000009d;
+}
+#navbar ul li a p {
+    padding: 16px;
+    transition: 0.1s ease;
+}
+#navbar ul li a p:hover {
+    transform: translate(-2px, -2px);
+    text-shadow: 5px 5px 3px #0000009d;
+    font-style: italic;
+    /* katsetus / beta - transform: rotate(5deg); */
+}
+#navbar a:hover {
+    color: #Ffdd00;
+}
+#navbar h1:hover {
+    transform: skewX(-10deg);
+    text-shadow: 5px 5px 3px #0000009d;
+}
+
+/* showcase */
+
+#showcase {
+    background: url(../img/hawaii_bg_main_bg.png) no-repeat center center/cover;
+    height: 1200px;
+    box-shadow: 0 0 20px #0000009d inset;
+}
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+    text-shadow: 5px 5px 3px #0000009d;
+}
+#showcase .intro-box {
+    outline-style: solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    background-color: #33333391;
+    height: 100%;
+    margin-bottom: 60px;
+    box-shadow: 5px 5px 8px #0000009d;
+    overflow: hidden;
+}
+#showcase .intro-box p {
+    text-align: justify;
+    font-size: 30px;
+    padding: 20px;
+    line-height: 1.7em;
+    font-weight: bold;
+}
+
+/* katsetus / beta
+
+#showcase .grad {
+    background-image: linear-gradient(rgba(255,0,0,0), #444);
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: -217px;
+} */
+
+    /* showcase gallery */
+
+#showcase .gallery {
+    text-align: justify;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    font-weight: bold;
+    text-shadow: 5px 5px 3px #0000009d;
+}
+
+#showcase .gallery hr {
+    color: #fff;
+    width: 25%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 5px;
+    box-shadow: 5px 5px 8px #0000009d;
+}
+
+    /* showcase gallary pictures */
+
+#showcase .showcase-img {
+    margin-bottom: 10px;
+    display: flex;
+}
+#showcase .showcase-img img {
+    margin-right: 20px;
+    border-radius: 10px; 
+    box-shadow: 5px 5px 8px #0000009d;
+    min-width: 250px;
+    width: 440px;
+}
+#showcase .showcase-img iframe {
+    margin-right: 20px;
+    box-shadow: 5px 5px 8px #0000009d;
+    min-width: 440px;
+}
+
+/* footer */
+
+#footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #195c92;
+}
+#footer p {
+    padding: 30px;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* katsetus / beta
+
+#footer .grad {
+    background-image: linear-gradient(rgba(255,0,0,0), #195c92);
+    height: 400px;
+    width: 100%;
+    bottom: 87.19px;
+} */
+
+/* map */
+
+#map-info {
+    padding-top: 40px;
+    height: 100%;
+}
+#map-info .info-content {
+    border-radius: 10px;
+    color: #fff;
+    background-color: #33333391;
+    outline-style: solid;
+    outline-offset: -3px;
+    height: 800px;
+}  
+#map-info .info-left-box{
+    width: 500px;
+    margin: 10px;
+    height: 800px;
+    float: left;
+}
+#map-info .info-left-box img{
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 10px;
+} 
+#map-info .info-map-info {
+    height: 200px;
+    width: 500px;
+    font-style: italic;
+    color: #a1a1a1;
+    padding-left: 10px;
+}
+#map-info .info-preview {
+    padding-top: 10px;
+    padding-right: 20px;
+    width: 50%;
+    height: 800px;
+    float: right;
+    text-align: justify;
+}
+#map-info .info-preview p {
+    font-weight: bold;
+    padding-top: 20px;
+}
+#map-info .info-preview hr {
+    height: 4px;
+    width: 500px;
+    color: #fff;
+    background-color: #fff;
+    border-radius: 10px;
+} 
+#map-info .info-tips {
+    float: left;
+    margin-top: 20px;
+} 
+#map-info .info-tips img {
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* sidebar */
+
+#sidebar {
+    float: left;
+    height: 100%;
+    width: 25%;
+}
+#sidebar .sidebar-box {
+    height: 100%;
+    background-color: #444;
+    box-shadow: 0 0 20px #0000009d inset;
+}
+
+    /* sidebar buttons */
+
+#sidebar .sidebar-nav {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 10px;
+    width: 83%;
+    height: 100%;
+}
+#sidebar ul {
+    list-style: none;
+}
+#sidebar ul li {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#sidebar ul hr {
+    color: #fff;
+    background-color: #fff;
+    height: 3px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #0000009d;
+}
+#sidebar ul li a {
+    background: #444;
+}
+#sidebar ul li a p {
+    color: #a1a1a1;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 5px 5px 8px #0000009d;
+    transition: 0.1s ease;
+}
+#sidebar ul li a p:hover {
+    color: #Ffdd00;
+    font-style: italic;
+    transform: translateX(10px);
+    text-shadow: 5px 5px 4px #000000c5;
+}
+#sidebar ul li a.current {
+    background: #fff;
+    text-decoration: underline #Ffdd00;
+}
+#sidebar ul li a p.current {
+    color: #fff;
+}
+
+/* tasks overview */
+
+#tasks-panel {
+    float: right;
+    width: 75%;
+    height: 100%;
+}
+#tasks-panel .intro-info {
+    color: #fff;
+    padding: 20px;
+    height: 100px;
+    width: 94%;
+    margin: 20px;
+}
+#tasks-panel .intro-info p {
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: justify;
+    line-height: 40px;
+    text-shadow: 5px 5px 8px #0000009d;
+}
+#tasks-panel .overview-box {
+    color: #fff;
+    padding: 20px;
+    height: 300px;
+    width: 94%;
+    outline-style: solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    background-color: #33333391;
+    margin: 20px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 8px #0000009d;
+    overflow: auto;
+}
+#tasks-panel .overview-text {
+    height: 100%;
+    width: 74%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    float: right;
+}
+#tasks-panel .overview-img {
+    height: 250px;
+    width: 250px;
+    float: left;
+    border-radius: 10px;
+}
+
+/* task info */
+
+#task {
+    float: right;
+    width: 75%;
+    height: 100%;
+}
+#task .necessary {
+    padding: 20px;
+    margin: 20px;
+    margin-right: 45px;
+    height: 700px;
+    width: 30%;
+    color: #fff;
+    float: right;
+    outline-style: solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    background-color: #33333391;
+    box-shadow: 5px 5px 8px #0000009d;
+    overflow: auto;
+}
+#task .necessary ul {
+    padding-left: 20px;
+}
+#task .necessary ul li {
+    margin-top: 20px;
+    height: 92%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: leftr;
+    line-height: 170%;
+}
+#task .necessary h1 {
+    height: 5%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #Ffdd00;
+}
+#task .overview {
+    color: #fff;
+    padding: 20px;
+    height: 230px;
+    width: 94%;
+    outline-style: solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    background-color: #33333391;
+    margin: 20px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 8px #0000009d;
+    overflow: auto;
+}
+#task .overview p {
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+}
+#task .img {
+    float: left;
+    width: 60%;
+    height: 700px;
+    margin: 20px;
+    overflow: auto;
+}
+#task .img img {
+    border-radius: 10px;
+    height: 250px;
+
+    margin: 20px;
+    box-shadow: 5px 5px 8px #0000009d;
+    
+}
+#task .img h1 {
+    height: 5%;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    color: #Ffdd00;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-shadow: 5px 5px 8px #0000009d;
+}
+#task .img hr {
+    color: #fff;
+    background-color: #fff;
+    width: 200px;
+    height: 4px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #0000009d;
+}
+#task .name {
+    width: 94%;
+    height: 10%;
+    margin: 20px;
+    padding: 20px;
+    color: #fff;
+    text-align: left;
+}
+#task .name p {
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: justify;
+    line-height: 40px;
+    text-shadow: 5px 5px 8px #0000009d;
+}
+
+ /* tips and tricks */
+
+#tips-and-tricks {
+    width: 100%;
+    height: 100%;
+}
+#tips-and-tricks .intro-info {
+    color: #fff;
+    padding-top: 40px;
+    height: 100px;
+    width: 94%;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#tips-and-tricks .intro-info p {
+    height: 100%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: justify;
+    line-height: 40px;
+    text-shadow: 5px 5px 8px #0000009d;
+}
+#tips-and-tricks .overview-box {
+    color: #fff;
+    padding: 20px;
+    height: 300px;
+    width: 94%;
+    outline-style: solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    background-color: #33333391;
+    margin: 20px;
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 8px #0000009d;
+    overflow: auto;
+}
+#tips-and-tricks .overview-text {
+    height: 100%;
+    width: 70%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: justify;
+    float: right;
+}
+#tips-and-tricks .overview-img {
+    height: 250px;
+    width: 250px;
+    float: left;
+    border-radius: 10px;
+}
+/* contact */
+
+#contact-form {
+    color: #fff
+}
+#contact-form h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    text-shadow: 5px 5px 8px #0000009d;
+}
+#contact-form .form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #Ffdd00;
+    text-shadow: 5px 5px 8px #0000009d;
+}
+#contact-form .form-group input,
+#contact-form .form-group textarea {
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 8px #0000009d;
+}
+#contact-form .form-group textarea {
+    height: 200px;
+}
+#contact-form .form-group input:focus,
+#contact-form .form-group textarea:focus {
+    outline: none;
+    border-color: #f7c08a;
+}
+#contact-form .form-group hr {
+    color: #fff;
+    background-color: #fff;
+    width: 200px;
+    height: 4px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 8px #0000009d;
+}
+#contact-form .btn {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #0000009d;
+    background-color: #33333391;
+    outline-offset: -3px;
+    outline-style: solid;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+#contact-form .btn p {
+    padding: 30px;
+    font-weight: bold;
+    transition-duration: 0.1s;
+}
+#contact-form .btn p:hover {
+    color: #Ffdd00;
+    transform: translate(-2px, -2px);
+    text-shadow: 5px 5px 3px #0000009d;
+    font-style: italic;
+}
+#contact-info {
+    margin-top: 210px;
+    background-color: #444;
+    box-shadow: 0 0 20px #0000009d inset;
+}
+#contact-info .box {
+    float: left;
+    width: 33.3%;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 5px 5px 3px #0000009d;
+}
+#contact-info .box i {
+    margin-bottom: 20px;
+}
+.py-30 {
+    padding: 30px 0;
+}

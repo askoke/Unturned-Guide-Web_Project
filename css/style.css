@@ -436,12 +436,15 @@ h1, h2, h3 {
     width: 60%;
     height: 700px;
     margin: 20px;
+    overflow: auto;
 }
 #task .img img {
     border-radius: 10px;
     height: 250px;
+
     margin: 20px;
     box-shadow: 5px 5px 8px #0000009d;
+    
 }
 #task .img h1 {
     height: 5%;
