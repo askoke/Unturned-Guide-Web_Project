@@ -200,47 +200,63 @@ h1, h2, h3 {
 /* map */
 
 #map-info {
-    background-color: #444;
-    height: 1000px;
-
+    padding-top: 40px;
+    height: 100%;
 }
 #map-info .info-content {
-    padding-top: 30px;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #33333391;
+    outline-style: solid;
+    outline-offset: -3px;
+    height: 800px;
 }  
-#map-info .info-box {
-    height: 900px;
-    background-color: #195c92;
-    width: 100%;
-} 
-#map-info .info-preview {
+#map-info .info-left-box{
+    width: 500px;
+    margin: 10px;
+    height: 800px;
+    float: left;
+}
+#map-info .info-left-box img{
+    border-radius: 10px;
     width: 500px;
     height: 500px;
-    padding: 10px;
-    background: url(../img/Russia\ 500.png) no-repeat;
-    float: left;
+    margin-bottom: 10px;
 } 
-#map-info .info-russia {
-    outline-style: solid;
-    outline-color: #Ffdd00;
+#map-info .info-map-info {
+    height: 200px;
+    width: 500px;
+    font-style: italic;
+    color: #a1a1a1;
+    padding-left: 10px;
+}
+#map-info .info-preview {
     padding-top: 10px;
+    padding-right: 20px;
     width: 50%;
     height: 800px;
-    background-color: #fdfdfd;
     float: right;
-    text-align: center;
+    text-align: justify;
+}
+#map-info .info-preview p {
+    font-weight: bold;
+    padding-top: 20px;
+}
+#map-info .info-preview hr {
+    height: 4px;
+    width: 500px;
+    color: #fff;
+    background-color: #fff;
+    border-radius: 10px;
 } 
-#map-info .info-russia-tips {
-    width: 250px;
-    height: 220px;
-    background: url(../img/car_new.png) no-repeat;
+#map-info .info-tips {
     float: left;
+    margin-top: 20px;
 } 
-#map-info .info-russia-tips-triks {
+#map-info .info-tips img {
+    border-radius: 10px;
     width: 250px;
-    height: 170px;
-    background: url(../img/plane1.png) no-repeat;
-    float: right
-} 
+}
 
 /* sidebar */
 
