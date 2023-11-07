@@ -464,7 +464,7 @@ h1, h2, h3 {
 }
 #tips-and-tricks .intro-info {
     color: #fff;
-    padding: 20px;
+    padding-top: 40px;
     height: 100px;
     width: 94%;
     margin-bottom: 20px;
@@ -496,7 +496,7 @@ h1, h2, h3 {
 }
 #tips-and-tricks .overview-text {
     height: 100%;
-    width: 74%;
+    width: 70%;
     font-size: 20px;
     font-weight: bold;
     text-align: justify;
