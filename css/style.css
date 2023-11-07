@@ -167,6 +167,7 @@ h1, h2, h3 {
     border-radius: 10px; 
     box-shadow: 5px 5px 8px #0000009d;
     min-width: 250px;
+    width: 440px;
 }
 #showcase .showcase-img iframe {
     margin-right: 20px;
@@ -392,11 +393,15 @@ h1, h2, h3 {
     box-shadow: 5px 5px 8px #0000009d;
     overflow: auto;
 }
-#task .necessary p {
-    height: 95%;
-    font-size: 13px;
+#task .necessary ul {
+    padding-left: 20px;
+}
+#task .necessary ul li {
+    margin-top: 20px;
+    height: 92%;
+    font-size: 20px;
     font-weight: bold;
-    text-align: justify;
+    text-align: leftr;
     line-height: 170%;
 }
 #task .necessary h1 {
@@ -435,8 +440,8 @@ h1, h2, h3 {
 #task .img img {
     border-radius: 10px;
     height: 250px;
-    width: 250px;
     margin: 20px;
+    box-shadow: 5px 5px 8px #0000009d;
 }
 #task .img h1 {
     height: 5%;
@@ -446,6 +451,7 @@ h1, h2, h3 {
     color: #Ffdd00;
     margin-bottom: 10px;
     margin-left: 10px;
+    text-shadow: 5px 5px 8px #0000009d;
 }
 #task .img hr {
     color: #fff;
@@ -453,6 +459,8 @@ h1, h2, h3 {
     width: 200px;
     height: 4px;
     margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #0000009d;
 }
 #task .name {
     width: 94%;
